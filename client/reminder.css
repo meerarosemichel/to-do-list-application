@@ -1,0 +1,336 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.logo h2{
+    color:#4F46E5;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#4F46E5;
+}
+
+.login-btn{
+    text-decoration:none;
+    background:#4F46E5;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#372fd1;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    text-align:center;
+    padding:30px 20px;
+    background:linear-gradient(135deg,#b839b7,#6C63FF);
+    color:white;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero h1 i{
+    margin-right:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* ===========================
+   REMINDER SECTION
+=========================== */
+
+.reminder{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-size:34px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.title p{
+    color:#666;
+}
+
+/* ===========================
+   REMINDER CARDS
+=========================== */
+
+#reminderContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.reminder-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-left:6px solid #4F46E5;
+}
+
+.reminder-card:hover{
+    transform:translateY(-8px);
+}
+
+.reminder-card h3{
+    color:#4F46E5;
+    margin-bottom:15px;
+}
+
+.reminder-card p{
+    margin-bottom:10px;
+    color:#555;
+}
+
+.pending{
+    display:inline-block;
+    background:#FFE4B5;
+    color:#D97706;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* ===========================
+   NO TASK MESSAGE
+=========================== */
+
+.no-task{
+    text-align:center;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.no-task i{
+    font-size:60px;
+    color:#22c55e;
+    margin-bottom:20px;
+}
+
+.no-task h2{
+    margin-bottom:10px;
+}
+
+.no-task p{
+    color:#666;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#1f2937;
+    color:white;
+    margin-top:60px;
+    text-align:center;
+}
+
+.footer-content{
+    padding:40px 20px;
+}
+
+.footer-content h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    max-width:600px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social a{
+    width:45px;
+    height:45px;
+    background:#4F46E5;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.social a:hover{
+    background:#fff;
+    color:#4F46E5;
+}
+
+footer hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.copyright{
+    padding:20px;
+    font-size:14px;
+}
+.reminder-card button{
+
+    border:none;
+    padding:10px 16px;
+    margin-right:10px;
+    margin-top:15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.3s;
+
+}
+
+.reminder-card button:first-of-type{
+
+    background:#22c55e;
+    color:white;
+
+}
+
+.reminder-card button:first-of-type:hover{
+
+    background:#16a34a;
+
+}
+
+.reminder-card button:last-of-type{
+
+    background:#ef4444;
+    color:white;
+
+}
+
+.reminder-card button:last-of-type:hover{
+
+    background:#dc2626;
+
+}
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.title h2{
+    font-size:28px;
+}
+
+.login-btn{
+    display:none;
+}
+
+#reminderContainer{
+    grid-template-columns:1fr;
+}
+
+.social{
+    flex-wrap:wrap;
+}
+
+}

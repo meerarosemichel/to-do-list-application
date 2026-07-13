@@ -1,0 +1,174 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    background:linear-gradient(135deg,#4F46E5,#6C63FF);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* ===========================
+   LOGOUT CONTAINER
+=========================== */
+
+.logout-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* ===========================
+   LOGOUT BOX
+=========================== */
+
+.logout-box{
+    background:#fff;
+    width:420px;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    animation:popup .5s ease;
+}
+
+@keyframes popup{
+
+    from{
+        transform:scale(.8);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.logout-box i{
+    font-size:70px;
+    color:#4F46E5;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.logout-box h1{
+    color:#333;
+    margin-bottom:15px;
+}
+
+.logout-box p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.cancel-btn,
+.logout-btn{
+
+    text-decoration:none;
+    border:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+/* Cancel Button */
+
+.cancel-btn{
+
+    background:#e5e7eb;
+    color:#333;
+
+}
+
+.cancel-btn:hover{
+
+    background:#d1d5db;
+
+}
+
+/* Logout Button */
+
+.logout-btn{
+
+    background:#ef4444;
+    color:#fff;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:500px){
+
+.logout-box{
+
+    width:100%;
+    padding:30px 20px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.cancel-btn,
+.logout-btn{
+
+    width:100%;
+
+}
+
+}
