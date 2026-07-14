@@ -11,7 +11,7 @@ logoutBtn.addEventListener("click", function () {
         alert("Logged out successfully!");
 
         // Redirect to Login Page
-        window.location.href = "index1.html";
+        window.location.href = "index.html";
 
     }
 

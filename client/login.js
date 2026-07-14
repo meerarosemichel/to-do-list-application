@@ -33,6 +33,6 @@ loginForm.addEventListener("submit", function(event){
 
     alert("Login Successful!");
 
-    window.location.href = "index1.html";
+    window.location.href = "index.html";
 
 });
