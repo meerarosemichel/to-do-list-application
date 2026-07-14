@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Planner | TaskFlow</title>
+<link rel="icon" href="/images/favicon.io.png">
+<link rel="stylesheet" href="dailyplanner.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>TaskFlow</h2>
+</div>
+
+<nav>
+
+<ul>
+
+
+<li> <a href="dashboard.html">
+<i class="fa-solid fa-table-columns"></i>
+        Dashboard
+</a>
+</li>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+<!-- 
+<li><a href="feat.html">Features</a></li> -->
+
+<li><a href="daily.html" class="active">Daily Planner</a></li>
+
+<!-- <li><a href="reminder.html">Reminder</a></li> -->
+
+<!-- <li><a href="track.html">Progress</a></li> -->
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="login.html" class="login-btn">Logout</a>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>Daily Planner</h1>
+
+<p>Organize your day and complete every task on time.</p>
+
+</section>
+
+<!-- Add Task -->
+
+<section class="planner">
+
+<div class="planner-top">
+
+<h2>Today's Tasks</h2>
+
+<button id="addTask">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Task
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Done</th>
+
+<th>Time</th>
+
+<th>Task</th>
+
+<th>Priority</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="taskTable">
+
+<tr>
+
+<td>
+
+<input type="checkbox">
+
+</td>
+
+<td>08:00 AM</td>
+
+<td>Morning Exercise</td>
+
+<td>
+
+<span class="high">
+
+High
+
+</span>
+
+</td>
+
+<td>
+
+<span class="pending">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<input type="checkbox" checked>
+
+</td>
+
+<td>10:00 AM</td>
+
+<td>College Project</td>
+
+<td>
+
+<span class="medium">
+
+Medium
+
+</span>
+
+</td>
+
+<td>
+
+<span class="completed">
+
+Completed
+
+</span>
+
+</td>
+
+<td>
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<input type="checkbox">
+
+</td>
+
+<td>03:00 PM</td>
+
+<td>JavaScript Practice</td>
+
+<td>
+
+<span class="low">
+
+Low
+
+</span>
+
+</td>
+
+<td>
+
+<span class="progress">
+
+In Progress
+
+</span>
+
+</td>
+
+<td>
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 TaskFlow. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="dailyplanner.js"></script>
+
+</body>
+</html>

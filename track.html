@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracking | TaskFlow</title>
+
+    <link rel="stylesheet" href="progress.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h2>TaskFlow</h2>
+    </div>
+
+    <nav>
+
+        <ul>
+            
+            <li> <a href="dashboard.html">
+            <i class="fa-solid fa-table-columns"></i>
+                  Dashboard
+            </a>
+            </li>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <!-- <li><a href="feat.html">Features</a></li> -->
+
+            <!-- <li><a href="daily.html">Daily Planner</a></li> -->
+
+            <!-- <li><a href="reminder.html">Reminder</a></li> -->
+
+            <li><a href="track.html" class="active">Progress</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <a href="login.html" class="login-btn">Logout</a>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        Progress Tracking
+
+    </h1>
+
+    <p>
+
+        Track your productivity and complete your daily goals.
+
+    </p>
+
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <i class="fa-solid fa-list-check"></i>
+
+        <h2 id="totalTasks">0</h2>
+
+        <p>Total Tasks</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h2 id="completedTasks">0</h2>
+
+        <p>Completed</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-hourglass-half"></i>
+
+        <h2 id="pendingTasks">0</h2>
+
+        <p>Pending</p>
+
+    </div>
+
+</section>
+
+<!-- ================= PROGRESS BAR ================= -->
+
+<section class="progress-section">
+
+    <h2>Your Daily Progress</h2>
+
+    <div class="progress-bar">
+
+        <div id="progressFill">
+
+            0%
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTIVITY MESSAGE ================= -->
+
+<section class="motivation">
+
+    <div class="message">
+
+        <i class="fa-solid fa-award"></i>
+
+        <h2 id="statusMessage">
+
+            Keep Going!
+
+        </h2>
+
+        <p>
+
+            Complete your pending tasks and achieve your goals.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= TASK TABLE ================= -->
+
+<section class="task-history">
+
+    <h2>Task Summary</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Task</th>
+
+                <th>Time</th>
+
+                <th>Priority</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="taskSummary">
+
+            <!-- JavaScript will display tasks -->
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 TaskFlow. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="progress.js"></script>
+
+</body>
+</html>
